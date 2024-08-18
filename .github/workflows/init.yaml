@@ -3,15 +3,16 @@ name : python
 
 on :
  push :
-  branch : labs
+  branches : labs
    
 
 jobs:
-  - name : build
-    runs-on : ubuntu-latest
+ runs-on :ubuntu-latest
+ build:
+  steps: 
   - name : checkout code 
     uses : actions/checkout@v3
-
+  
 
 
 
