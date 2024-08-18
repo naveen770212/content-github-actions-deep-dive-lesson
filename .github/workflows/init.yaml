@@ -19,7 +19,7 @@ jobs:
       python-version: '3.9'
   - name: install libraries
     run: |
-     cd functions
+     cd function
      python -m pip install upgrade pip
      if [ -f requirements.txt];
      then pip install -r requirements.txt . ;
