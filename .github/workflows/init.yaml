@@ -1,12 +1,16 @@
-# This is a placeholder so actions won't default to a getting started page
+name : python
 
-name: Placeholder
+on :
+ push :
+  branch : 
+  -master
 
-on: push
+job :
+  - name : build
+    runs-on : ubuntu-latest
+  - name : checkout code 
+    uses : actions/checkout@v3
 
-jobs:
-  init:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run a one-line script
-        run: echo Hello, world!
+
+
+
