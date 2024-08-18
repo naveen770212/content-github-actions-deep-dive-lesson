@@ -1,9 +1,10 @@
+#python example
 name : python
 
 on :
  push :
-  branch : 
-  -master
+  branch : labs
+   
 
 job :
   - name : build
