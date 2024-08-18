@@ -6,7 +6,7 @@ on :
   branch : labs
    
 
-job :
+jobs:
   - name : build
     runs-on : ubuntu-latest
   - name : checkout code 
