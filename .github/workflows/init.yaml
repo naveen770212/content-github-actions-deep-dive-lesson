@@ -27,7 +27,7 @@ jobs:
   - name: zip the bundle
     run: |
      cd function
-     zip -r ../${{github.sha}}.zip
+     zip -r ../${{github.sha}}.zip .
      echo ls -lrt
      echo pwd
      echo $pwd
