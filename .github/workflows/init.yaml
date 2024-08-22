@@ -31,5 +31,10 @@ jobs:
      echo ls -lrt
      echo pwd
      echo $pwd
+  - name: archive artifact
+    uses: actions/uploadartifact@v2
+    with:
+      name:zipped-bundle
+      path:${{github.sha}}.zip   
 
 
